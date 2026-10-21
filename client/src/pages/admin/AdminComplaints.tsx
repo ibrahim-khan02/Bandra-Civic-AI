@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+
 import {
   Search,
   RefreshCw,
@@ -7,7 +7,7 @@ import {
   Eye,
   Trash2,
   AlertCircle,
-  FileText,
+  
 } from "lucide-react";
 import toast from "react-hot-toast";
 import {
@@ -17,6 +17,7 @@ import {
 } from "../../services/complaintAPI";
 import type { Complaint } from "../../../types";
 import { getAdminComplaints } from "../../services/complaintAPI";
+import { useNavigate } from "react-router-dom";
 
 type Status =
   | "Pending"
@@ -34,6 +35,7 @@ const STATUSES: Status[] = [
 ];
 
 export const AdminComplaints = () => {
+  const navigate = useNavigate();
   const [complaints, setComplaints] = useState<Complaint[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");

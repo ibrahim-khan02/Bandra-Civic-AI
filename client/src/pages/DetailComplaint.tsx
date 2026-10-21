@@ -32,7 +32,7 @@ export const DetailComplaint = () => {
   const navigate = useNavigate();
 
   const [complaint, setComplaint] = useState<Complaint | null>(null);
-  const [loading , setLoading] = useState(true);
+  const [, setLoading] = useState(true);
   const [error , setError] = useState("");
   useEffect( ()=>{
     const loadComplaint = async () =>{

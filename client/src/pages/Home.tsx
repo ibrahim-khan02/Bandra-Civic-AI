@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
-import { useComplaint } from "../context/ComplaintContext";
+
 import { useEffect, useState } from "react";
 import { MapPin, Clock, ArrowRight } from "lucide-react";
 import type { Complaint } from "../../types";

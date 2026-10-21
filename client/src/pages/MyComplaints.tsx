@@ -9,7 +9,7 @@ export const MyComplaints = () => {
 
     const navigate = useNavigate();
     const [complaints, setComplaints] =useState<any[]>([])
-    const [loading , setLoading] = useState(true)
+    const [,setLoading] = useState(true)
     //const {complaints , removeComplaint} = useComplaint();
     useEffect( ()=>{
       const loadComplaints = async()=>{

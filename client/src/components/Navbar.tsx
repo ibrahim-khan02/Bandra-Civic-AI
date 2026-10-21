@@ -1,4 +1,4 @@
-import { ChevronDownIcon, LogOutIcon, MapPinIcon, MenuIcon, NotebookPenIcon, SearchIcon, ShieldIcon, UserIcon, XIcon } from "lucide-react"
+import {  LogOutIcon,    SearchIcon, ShieldIcon } from "lucide-react"
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 
@@ -18,9 +18,9 @@ export const Navbar = () => {
   // applying useState for the function of components
   const [searchQuery, setSearchQuery] = useState("")
   //const [complaints,setComplaints] = useComplaints()
-  const [userComplaintOpen, setUserComplaintOpen] = useState(false)
+  
   //const [complaintCount , setComplaintCount] = useComplaintBox();
-  const [userMenuOpen, setUserMenuOpen] = useState(false)
+  const [, setUserMenuOpen] = useState(false)
   const navigate = useNavigate()
 
   return (
