@@ -1,0 +1,59 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+.venv-ai/
+venv/
+__pycache__/
+*.py[cod]
+
+# Frontend dependencies and build output
+node_modules/
+client/node_modules/
+client/dist/
+
+# Local tooling
+.vscode/
+
+# Local logs
+*.log
+
+# Local database and private uploads
+*.sqlite3
+server/uploads/
+uploads/
+
+# Python test/cache files
+.pytest_cache/
+.mypy_cache/
+

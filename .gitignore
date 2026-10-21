@@ -1,0 +1,72 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+.venv-ai/
+venv/
+__pycache__/
+*.py[cod]
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+client/node_modules/
+client/dist/
+
+# Editor files
+.vscode/
+.idea/
+
+# Logs and local databases
+*.log
+*.sqlite3
+
+# Private uploads
+server/uploads/
+uploads/
+
+# Python caches
+.pytest_cache/
+.mypy_cache/
+
+
+# Secrets
+.env
+.env.*
+!.env.example
+server/.env
+
+# Python environments and caches
+.venv/
+.venv-ai/
+server/.venv-ai/
+venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Frontend dependencies and build output
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Editor files
+.vscode/
+.idea/
+
+# Private uploads and local databases
+server/uploads/
+uploads/
+*.sqlite3
+
+# Logs
+*.log
+
+# Python test caches
+.pytest_cache/
+.mypy_cache/
